@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    resize: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container{
+    max-width: 1116px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+@mixin text($fs , $fw , $lh , $c){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c
+}
+@mixin btn($p){
+    padding: $p;
+    background: #F77833;
+    border-radius: 8px;
+    border: none;
+    outline: 0;
+    box-shadow: 0px 1px 4px 0px #00000014;
+}
+@import './header.scss';
+@import './banner.scss';
+@import './reviews.scss';
+@import './btns.scss'

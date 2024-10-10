@@ -1,0 +1,33 @@
+.btns {
+  // padding-left: 197px;
+  padding-top: 24px;
+  .btn-see {
+    @include btn(16px 129px);
+    @include text(16px, 700, 20px, #fff);
+    letter-spacing: -1;
+    display: block;
+    margin: 0 auto;
+    
+    margin-bottom: 24px;
+    @media screen and (max-width: 885px) {
+      @include btn(16px 77px);
+      width: 100%;
+    }
+  }
+}
+.mobile {
+    background: white;
+    display: none;
+    margin-bottom: 24px;
+    @media screen and (max-width: 885px) {
+      display: block;
+    }
+  > button {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 100px;
+    width: 100%;
+    @include btn(16px 24px);
+    @include text(16px, 700, 20px, #fff);
+  }
+}
